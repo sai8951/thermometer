@@ -1,0 +1,11 @@
+.sample-box {
+    position: relative;
+}
+
+.digit {
+    display: flex;
+    position: absolute;
+    top: 268px;
+    left: 160px;
+    align-items: baseline;
+}

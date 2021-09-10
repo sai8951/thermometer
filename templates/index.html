@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>偽装体温計</h3>
+    <form action="/normal" method="get">
+        <input type="submit" value='平熱にしたい'>
+    </form>
+<br>
+    <form action="/fake" method="get">
+        <input type="submit" value='仮病を使いたい'>
+    </form>
+{% endblock %}

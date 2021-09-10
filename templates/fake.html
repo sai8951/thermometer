@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>仮病体温計</h3>
+今日の体温は{{ten}}{{one}}.{{point}}°Cです！
+<form action="/" method="get">
+    <input type="submit" value='もう一回やる'>
+</form>
+<br>
+<div class="sample-box">
+    <img src="static/imgs/thermo.jpg" alt="thermometer" title="thermometer" height="500">
+    <div class="digit">
+        <img src="static/imgs/{{ten}}_03.png", alt="three", height="25">
+        &nbsp;
+        <img src="static/imgs/{{one}}_03.png", alt="three", height="25">
+        &nbsp;
+        <img src="static/imgs/dot_03.png", alt="three", height="5">
+        &nbsp;
+        <img src="static/imgs/{{point}}_03.png", alt="three", height="25">
+    </div>
+</div>
+{% endblock %}
