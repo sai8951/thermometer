@@ -14,7 +14,8 @@ def normal():
     ten = 3
     one = 6
     point = random.randint(0,7)
-    return render_template('normal.html', title='平熱体温計', ten=ten, one=one, point=point)
+    pic = random.choice(['thermo','thermo2','thermo3'])
+    return render_template('normal.html', title='平熱体温計', ten=ten, one=one, point=point, pic=pic)
 
 @app.route('/fake', methods=["GET"])
 def fake():
@@ -26,7 +27,8 @@ def fake():
         point = random.randint(0,3)
     else:
         point = random.randint(0,9)
-    return render_template('fake.html', title='仮病体温計', ten=ten, one=one, point=point)
+    pic = random.choice(['thermo','thermo2','thermo3'])
+    return render_template('fake.html', title='仮病体温計', ten=ten, one=one, point=point, pic=pic)
 
 if __name__ == "__main__":
     app.run(debug=True)
