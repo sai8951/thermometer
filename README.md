@@ -1,5 +1,5 @@
 # 偽装体温計 (Fake Thermometer)
-~~URL: [https://fake-thermometer.herokuapp.com/](https://fake-thermometer.herokuapp.com/)~~
+URL: [https://sai8951.pythonanywhere.com/](https://sai8951.pythonanywhere.com/)
 
 ## Local Run
 ### Installation using miniconda
